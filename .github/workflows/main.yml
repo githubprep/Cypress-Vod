@@ -11,6 +11,9 @@ jobs:
    steps:
      - name: Checkout GitCode
        uses: actions/checkout@v2
+       with:
+         node-version: '16.x'
+ 
  
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
