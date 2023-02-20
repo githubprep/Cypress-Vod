@@ -1,0 +1,12 @@
+name: At he end of every day    
+on:
+ schedule:
+   - cron: "0 0 * * *"
+   branches:
+     - main
+jobs:
+ Cypress-Test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
